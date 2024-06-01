@@ -1,6 +1,10 @@
-const url = 'https://sonatype.sonatype.app/platform/rest/report/bnr-ami-cleaner/02ab7330f64a45cdaa8baf9251feb7af/browseReport/policythreats.json';
+const url = 'https://sonatype.sonatype.app/platform/api/v2/applications/bnr-ami-cleaner/reports/02ab7330f64a45cdaa8baf9251feb7af/policy';
+
 const username = localStorage.getItem('username');
 const password = localStorage.getItem('password');
+
+console.log(username);
+console.log(password);
 
 const headers = new Headers();
 headers.append('Authorization', 'Basic ' + btoa(username + ':' + password));
